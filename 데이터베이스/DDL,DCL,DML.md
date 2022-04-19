@@ -67,6 +67,9 @@ CREATE TABLE 사원
 - DROP INDEX 인덱스명;
 - 해당 인덱스 명을 가진 녀석을 제거하는 걸 말함
 
+### 데이터 조작어(Data Manipulation Language)
+- 데이터베이스에 저장된 자료를 입력, 수정, 삭제, 조회하는 명령어
+
 
 
 
