@@ -8,6 +8,9 @@
 2. 하나의 칼럼에 대해 칼럼명 데이터 타입 제약 조건의 순서로 구성됨
 
 #### 사용방법
+
+<pre>
+<code>
 CREATE TABLE 사원
 {
   사번 VARCHAR(10) PRIMARY KEY,
@@ -18,6 +21,8 @@ CREATE TABLE 사원
   입사일 DATA DEFAULT SYSDATE -- SYSDATE는 현재시간/날짜
 
 };
+</code>
+</pre>
 
 ### CREATE의 대표적 제약 조건
 - PRIMARY KEY : 테이블의 기본 키를 정의, 유일하게 테이블의 각 행을 식별
