@@ -158,3 +158,5 @@ IP Security에 대해 공부.
 - 친구들은 열심히 하려고 부딧히는 거 같은데...
 - 여러므로 쉽지 않은 기분이다. 코드를 보고 주석 없어도 이해는 되던데,
 짜려고 하면 어렵다. 열심히하자. 열심히.
+참고 : 
+https://yagom.net/forums/topic/github-issue-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/
