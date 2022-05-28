@@ -160,3 +160,7 @@ IP Security에 대해 공부.
 짜려고 하면 어렵다. 열심히하자. 열심히.
 참고 : 
 https://yagom.net/forums/topic/github-issue-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/
+
+
+### 5월 28일
+- 오늘은 프로그래머스 1,2단계 테스트문제를 풀었다.(문제에선 java로 풀었기에 C++로 응시)
