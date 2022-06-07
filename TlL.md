@@ -22,3 +22,44 @@
 ### 6월 6일
 #### 알고리즘
 - 프로그래머스 3단계 문제를 풀었다.
+- 풍선 터트리기 문제
+
+````java
+
+class Solution {
+    public static int solution(int[] a) {
+	int answer = 0;
+
+	int l = 1000000000, r = 1000000000;
+
+	for (int i = 0; i < a.length; i++) {
+		if (a[i] < l) 
+        {
+			    answer++;
+			    l = a[i];
+		}
+		  if (a[a.length - 1 - i] < r) 
+        {
+			answer++;
+			r = a[a.length - 1 - i];
+		}
+
+	
+	}
+        
+        if (l == r)
+        {
+            answer -= 1;
+        }
+			
+	return answer;
+}
+}
+
+``````
+
+- 조건에 따라 풍선을 터트리는 문제니까. 양쪽에서 터트리돼 조건에서 작은 녀석이 터지도록하면 된다.
+- 만약 같을 경우엔 중복 카운트되므로, 하나를 뺴면 완성이다.
+
+
+
