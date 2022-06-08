@@ -62,5 +62,50 @@ class Solution
 - 조건에 따라 풍선을 터트리는 문제니까. 양쪽에서 터트리돼 조건에서 작은 녀석이 터지도록하면 된다.
 - 만약 같을 경우엔 중복 카운트되므로, 하나를 뺴면 완성이다.
 
+#### 2022 - 06 - 08
+
+`````java
+
+class Solution
+{
+    public int solution(String s)
+    {
+        char[] chr = s.toCharArray();
+        
+        // 가장 긴 문자열부터 팰린드롬 검사
+        for (int end = s.length(); end > 1; end--) {
+            
+            // 시작 인덱스
+            for (int start = 0; start <= s.length() - end; start++) {
+                boolean chk = true;
+                
+                // 처음부터 문자열 길이의 반틈만큼 문자가 같은지 비교
+                for (int i = 0; i < end/2; i++) {
+                    if (chr[start + i] != chr[start + end  - i - 1]) {
+                        chk = false;
+                        break;
+                    }
+                }
+                
+                if (chk) return end;
+            }
+        }
+        
+        return 1;
+    }
+}
+
+`````
+
+/// 가장 긴것부터, 양쪽으로 줄여가며 검사하다가, 펠린드롭이 성립되지 않는 시점에서 break 문을 이용해 빠져나온다.
+/// for문에 사용하는 변수는 for문 내부에선 가져다 쓸 수 있음.
+/// boolean 변수를 활용하여. 펠린드롭이 성립되지 않는 시점이 곧, 펠린드롭이 성립되는 문장이 되므로 return문을 활용해 반환하면 끝이다.
+
+
+---------
+### 오늘 배운 것
+- 영어 회화 공부를 했다.
+- 전자정부프레임워크의 의의에 대해 배움.
+- 
 
 
