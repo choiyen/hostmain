@@ -158,3 +158,64 @@ Protocol
 - 디스크 컨트롤러 문제를 풀어봤다.
 - 이번엔 오랫만에 1시간 20분 내에 푼 거 같다.
 
+
+### 6월 16일
+
+```java
+
+
+import java.util.*;
+
+class Solution 
+{
+    boolean [] visited;
+    boolean [][] relation;
+    public int solution(int n, int[][] edge) {
+        int answer = 0;
+        visited = new boolean[n+1];
+        relation = new boolean[n+1][n+1];
+        answer = bfs(edge);
+        
+        return answer;
+    }
+    public int bfs(int [][] edge)
+    {
+        Queue <Integer> queue = new LinkedList<>();
+        queue.offer(1);
+        visited[1] = true;
+        
+        for(int i = 0; i < edge.length; i++)
+        {
+            int x = edge[i][0];
+            int y = edge[i][1];ㅅ
+            
+            relation[x][y] = true;
+            relation[y][x] = true;
+        }
+        int size = 0;
+        
+        while(!queue.isEmpty())
+        {
+            size = queue.size();
+            for(int i = 0; i < size; i++)
+            {
+                int current =  queue.poll();
+                for(int j = 1; j < visited.length; j++)
+                {
+                    if(!visited[j]&& relation[current][j])
+                    {
+                        visited[j] = true;
+                        queue.add(j);
+                    }
+                }
+            }
+        }
+        
+        return size;
+    }
+}
+
+```
+### 문제 풀이방법
+- 연결되지 않은 노드 중에 방문하지 않는 노드만 찾는다.
+- while  처리하긴 했지만 사실상 몇번만 돌고 끝남.
