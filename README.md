@@ -195,3 +195,8 @@ https://yagom.net/forums/topic/github-issue-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0
 
 ### 6월 23일
 - 프로그래머스 GPS 문제를 풀었다.
+
+
+### 6월 24일
+- 정보처리기사 개념 재정리
+- 생명보험 코딩테스트 준비
