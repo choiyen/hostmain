@@ -210,3 +210,6 @@ https://yagom.net/forums/topic/github-issue-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0
  
 #### 6월 28일
 - 정보처리기사 이번엔 붙어야지.
+
+### 7월 1일
+- 정보처리기사 관련 공부
