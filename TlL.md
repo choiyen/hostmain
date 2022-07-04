@@ -257,3 +257,6 @@ public class Main
 
 -  StringTokenizer : 토큰으로 줄여서 반환함
 -  countTokens() : 토큰의 개수를 반환함
+
+
+![image](https://user-images.githubusercontent.com/72552897/177064822-80dbae9f-e555-4dff-8390-3a6419ef15bb.png)
