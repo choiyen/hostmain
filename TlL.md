@@ -264,3 +264,60 @@ public class Main
 
 https://koohee.tistory.com/14 : 여기서 첨부함
 
+```` java
+
+
+import java.util.Scanner;
+ 
+public class Main {
+ 
+	public static void main(String[] args) {
+ 
+		Scanner in = new Scanner(System.in);
+        
+		int A = in.nextInt();
+		int B = in.nextInt();
+        
+        in.close();
+        
+		A = Integer.parseInt(new StringBuilder().append(A).reverse().toString());
+		B = Integer.parseInt(new StringBuilder().append(B).reverse().toString());
+		
+		System.out.print(A > B ? A : B);
+	
+	}
+}
+
+`````
+2. 두번째 방법
+
+````java
+
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+ 
+public class Main {
+	public static void main(String[] args) throws IOException {
+ 
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		StringTokenizer st = new StringTokenizer(br.readLine()," ");
+        
+		int A = Integer.parseInt(new StringBuilder(st.nextToken()).reverse().toString());
+		int B = Integer.parseInt(new StringBuilder(st.nextToken()).reverse().toString());
+		
+		System.out.print(A > B ? A:B);
+		
+	}
+}
+
+
+`````
+
+- StringBuilder().append(A).reverse().toString()
+- StringBuilder(st.nextToken()).reverse().toString()
+- Scanner와 BufferedReader의 차이.
+
