@@ -229,3 +229,31 @@ class Solution
 
 ### 6월 19일
 - 휴식일이지만, 코딩 문제 C++로 재점검
+
+### 7월 4일
+
+````java
+
+import java.util.Scanner;
+import java.util.StringTokenizer;
+ 
+public class Main 
+{
+ 
+	public static void main(String[] args) 
+    {
+        Scanner in = new Scanner(System.in);
+        String s = in.nextLine();
+        in.close();
+        
+        StringTokenizer st = new StringTokenizer(s, " ");
+        
+        // countTokens() 는 토큰의 개수를 반환한다
+		System.out.println(st.countTokens());	
+    }
+}
+
+````
+
+-  StringTokenizer : 토큰으로 줄여서 반환함
+-  countTokens() : 토큰의 개수를 반환함
